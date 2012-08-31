@@ -28,3 +28,13 @@ C:\Program Files\Microsoft Forefront Threat Management Gateway\Templates\CookieA
 
 8. Restart the TMG Firewall Service (yeah, I know...  Unfortunately TMG Caches these pages and restarting the service is the only way to clear it as far as I know). 
 
+Browse to the site and TMG will present the new authentication page. Try it on a smart phone or tablet and marvel at its beauty. 
+
+#Issues
+
+For now, only the usr_pwd.htm file has been customized. This file is served only when using Windows (Active Directory) authentication (set on the Authentication page in step 5 above). 
+I intend to customize the other forms (Radius and SecureID) soon. Feel free to contribute!
+
+#Credits
+1. Responsive goodness is provided mainly by the scaffolding and forms components in [bootstrap](http://twitter.github.com/bootstrap)
+2. The inspiration for this project came from a web development request from Etienne Liebetrau of [Fix My IT System](http://fixmyitsystem.com)
