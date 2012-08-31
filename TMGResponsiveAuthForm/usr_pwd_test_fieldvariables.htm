@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!-- {57A118C6-2DA9-419d-BE9A-F92B0F9A418B} -->
+<html>
+
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; CHARSET=utf-8">
+	
+	<title>@@L_OWAWindowTitle_Text</title>
+	  <link rel="shortcut icon" href="/CookieAuth.dll?GetPic?formdir=@@FORMDIR&image=favicon.ico" type="image/x-icon"> 
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta content="NOINDEX, NOFOLLOW" name="Robots">
+	
+	<link rel="stylesheet" href="styles_responsive.css" type="text/css">
+	<script src="flogon_test.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script type="text/javascript">
+		<!--
+	
+		var a_fGzpEnbl = 1;
+	    var g_fFcs = 1;
+	
+	    function window_onload()
+	    {
+	        onld();
+        
+	        if (chkCookies())
+	        {
+				ldCookie('username', 'password');
+	             
+				var expl1 = document.getElementById('expl1');
+				expl1.style.display = "";
+		    
+				var lnkHidedSection = document.getElementById('lnkHdSec');
+				lnkHidedSection.style.display = "none";
+	    	
+				var lnkShowSection = document.getElementById('lnkShwSec');
+				lnkShowSection.style.display = "";
+			}
+	    }
+		-->
+	</script>
+</head>
+
+<body class="owaLgnBdy" onload="return window_onload();" >
+<noscript>
+	<div id="dvErr">
+		<table cellpadding="0" cellspacing="0">
+		<tr>
+			<td><img src="/CookieAuth.dll?GetPic?formdir=@@FORMDIR&image=lgnerror.gif" alt=""></td>
+			<td style="width:100%">@@L_OWANoScriptMessage_Text</td>
+		</tr>
+		</table>
+	</div>
+</noscript>
+
+<div class="container">
+	<div class="row">
+		<div class="span12">
+			<section class="content">
+				<div id="tblMid">
+				<form class="form-horizontal" id="logonForm" action="/CookieAuth.dll?Logon" method="post" autocomplete="off">
+				<input type="hidden" id="curl" name="curl" value="@@DESTINATION" />
+				<input type="hidden" id="flags" name="flags" value="@@GZIP_VAL" />
+				<input type="hidden" id="forcedownlevel" name="forcedownlevel" value="0" />
+				<input type="hidden" id="formdir" name="formdir" value="@@FORMDIR" />
+					<div style="text-align: center;">
+					<img src="Logo.png" width="369" height="65" alt="Logo">
+		            </div>
+					<div>@@INSERT_USER_TEXT</div>
+					<legend>Login</legend>
+		            <div class="control-group">
+		              <label class="control-label" for="inputEmail">@@L_UserName_Text</label>
+		              <div class="controls">
+		                <input type="text" id="username" placeholder="Domain\Username" name="username"  class="input-block-level" />
+		              </div>
+		            </div>
+		            <div class="control-group">
+		              <label class="control-label" for="inputEmail">@@L_Password_Text</label>
+		              <div class="controls">
+		                <input type="password" id="password" placeholder="Password" name="password" class="input-block-level"	>
+		<button id="SubmitCreds" name="SubmitCreds" type="submit" class="btn btn-block" style="margin-top: 16px;" value="@@L_LoginButton_Text" onclick="clkLgn()">@@L_LoginButton_Text</button>
+		              </div>
+		            </div>
+		            <div class="control-group">
+						<label class="control-label widen"><strong>@@L_ShowTrustTitle_Text</strong>
+							<div id="expl1" style="">
+								(<a href="javascript:clkExp(lnkShwSec)" id="lnkShwSec" style="display: none; "><small>@@L_ShowDetail_Text</a><a href="javascript:clkExp(lnkHdSec)" id="lnkHdSec" style="">@@L_HideDetail_Text</a>)</small>
+							</div>
+						</label>
+		              <div class="controls">
+						<label class="radio input-block-level">
+								<input id="rdoPblc" type="radio" name="optionsRadios" id="optionsRadios1" value="option1" onclick="clkSec()" checked />
+								@@L_ShowPublicUI_Text
+								<div id="trPubExp" class="expl" style="display: none;">
+									<small>@@L_PublicDescription_Text</small>
+								</div>
+						</label>
+						<label class="radio input-block-level">
+							<input id="rdoPrvt" type="radio" name="optionsRadios" id="optionsRadios2" value="option2" onclick="clkSec()" >
+						@@L_ShowTrustedUI_Text
+							<div id="trPrvtExp" class="expl" style="display: none;"><small>@@L_PremiumTrustDescription_Text</small></div>
+							<div id="trPrvtWrn" style="display: none;">
+								<small>@@L_TrustWarning_Text</small></div>
+						</label>
+						<div style="margin-top: 16px; display: @@CHPWDSTYLE">
+						<label class="checkbox">
+							<input id="chpwd" name="chpwd" type="checkbox" class="rdo" onclick="clkChpwd()" value="on"> 
+						 @@L_RequestPwdChange_Text
+						<div  id="trChpwdExp" class="expl" style="display: none"><small>@@L_RequestPwdChangeExpl_Text</small></div>
+						</label>
+						</div>
+		              </div>
+		            </div>
+					<div style="text-align: center">
+						<small>@@L_OWAConnectedToExchange<br />
+							@@L_SecuredByISA<br />
+							<small>@@L_Copyright</small></small>
+					</div>
+	
+				</form>
+				</div>
+				<div id="tblMid2" style="display: none">
+				@@L_CookiesDisabledWrn_Text
+					<div class="control-group">
+						<div class="controls" style="margin: auto">
+					<button id="SubmitCreds" name="SubmitCreds" type="button" class="btn btn-block" style="margin-top: 16px;" value="@@L_RetryButton_Text" oonclick="clkRtry()">@@L_RetryButton_Text</button>
+						</div>
+					</div>
+				
+				</div>
+			</section>
+		</div>
+	</div>
+</div>
+</body>
+</html>
