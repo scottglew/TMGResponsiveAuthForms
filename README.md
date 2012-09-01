@@ -8,6 +8,8 @@ Responsive (Mobile Friendly) Authentication Forms for Microsoft Forefront TMG
 This project contains a set of templates for Microsoft Forefront Threat Management Gateway to make logging into
 published websites easier on mobile devices.
 
+This default form <img src="http://www.fastvue.co/wp-content/uploads/2012/08/ForefrontTMGFormsAuthenticationOniPhone-200x300.png" /> becomes <img src="http://www.fastvue.co/wp-content/uploads/2012/08/ForefrontTMGMobileFriendlyAuthenticationOniPhone-200x300.png"/>
+
 #Installation
 
 1. Duplicate the existing ISA Templates folder at:
