@@ -9,7 +9,7 @@
 <script src="flogon_test.js" type="text/javascript" charset="utf-8"></script>
 
 
-<title>Responsive Login Test Page</title>
+<title>Outlook Web App</title>
 
 
 <script type="text/javascript">
@@ -42,7 +42,16 @@
 
 
 <body onload="return window_onload();" >
-
+<noscript>
+	<div id="dvErr">
+		<table cellpadding="0" cellspacing="0">
+		<tr>
+			<td><img src="lgnerror.gif" alt=""></td>
+			<td style="width:100%">To use Microsoft Outlook Web App, script must be enabled on your browser. For information about how to enable script, consult the Help for your browser. If your browser does not support script, you can download <a href='http://www.microsoft.com/windows/ie/downloads/default.mspx'>Microsoft Internet Explorer</a>.</td>
+		</tr>
+		</table>
+	</div>
+</noscript>
 <div class="container">
 	<div class="row">
 		<div class="span12">
@@ -95,13 +104,21 @@
 						<label class="checkbox">
 							<input id="chpwd" name="chpwd" type="checkbox" class="rdo" onclick="clkChpwd()" value="on"> 
 						  I want to change my password after logging on
-						<div  id="trChpwdExp" class="expl" style="display: none"><small>With this option selected, a page used to change your password will be displayed after your credentials are submitted.</small></div>
+						<div id="trChpwdExp" class="expl" style="display: none"><small>With this option selected, a page used to change your password will be displayed after your credentials are submitted.</small></div>
 						</label>
+						</div>
+						<div style="margin-top: 16px;">
+							<label class="checkbox"><input id="chkBsc" name="chkBsc" type="checkbox" class="rdo" onclick="clkBsc()">Use Outlook Web App Light</label>
+							<div id="trBscExp" class="expl" style="display: none">
+									<label class="checkbox"><small>The Light client provides fewer features and is sometimes faster. Use the Light client if you are on a slow connection or using a computer with unusually strict browser security settings.</small></label>
+							</div>
 						</div>
 		              </div>
 		            </div>
 					<div style="text-align: center">
-						<small>Secured by Microsoft Forefront Threat Management Gateway<br />
+						<small>
+							<small>Connected to Microsoft Exchange<br />
+								Secured by Microsoft Forefront Threat Management Gateway<br />
 							<small>© 2009 Microsoft Corporation. All rights reserved.</small></small>
 					</div>
 	
