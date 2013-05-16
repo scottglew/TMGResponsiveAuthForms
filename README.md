@@ -25,11 +25,11 @@ The form also scales nicely for tablets and normal desktops / large screens.
 2. Call the duplicated folder 'Custom' (or whatever takes your fancy). You should now have a folder here:
 	`C:\Program Files\Microsoft Forefront Threat Management Gateway\Templates\CookieAuthTemplates\Custom`
 
-3. Copy the usr_pwd.htm, styles_responsive.css, and Logo.png files from either the **ISA** or **Exchange** folders in this project into the Custom Folder (replace the existing files). Use the *Exchnage* versions for OWA, and the *ISA* versions for everything else. Feel free to replace Logo.png with your own custom logo.
+3. Copy the `usr_pwd.htm`, `styles_responsive.css`, and `Logo.png` files from either the **ISA** or **Exchange** folders in this project into the Custom Folder (replace the existing files). Use the *Exchange* versions for OWA, and the *ISA* versions for everything else. Feel free to replace Logo.png with your own custom logo.
 
-4. In your TMG Management console, edit your desired Web Publishing rule and go to the Listener page. Click Properties.
+4. In your TMG Management console, edit your desired *Web Publishing rule* and go to the *Listener* page. Click **Properties**.
 
-5. On the Authentication page, ensure HTML Forms Authentication is selected.
+5. On the *Authentication* page, ensure *HTML Forms Authentication* is selected.
 
 6. On the Forms Tab enter 'Custom' (you don't need to enter the entire path, just the word 'Custom' without the quotes)
 
@@ -37,7 +37,7 @@ The form also scales nicely for tablets and normal desktops / large screens.
 
 8. Restart the TMG Firewall Service (yeah, I know...  Unfortunately TMG Caches these pages and restarting the service is the only way to clear it as far as I know). 
 
-Browse to the site and TMG will present the new authentication page. Try it on a smart phone or tablet and marvel at its beauty. 
+Browse to the site and Forefront TMG will present the new authentication page. Try it on a smart phone or tablet and marvel at its beauty. 
 
 #Issues
 
