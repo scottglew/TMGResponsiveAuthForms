@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="styles_responsive.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<script src="flogon_test.js" type="text/javascript" charset="utf-8"></script>
+
+
+<title>@@L_OWAWindowTitle_Text</title>
+
+
+<script type="text/javascript">
+	<!--
+	
+	var a_fGzpEnbl = 1;
+    var g_fFcs = 1;
+	
+    function window_onload()
+    {
+        onld();
+        
+        if (chkCookies())
+        {
+			ldCookie('username', 'password');
+	             
+			var expl1 = document.getElementById('expl1');
+			expl1.style.display = "";
+		    
+			var lnkHidedSection = document.getElementById('lnkHdSec');
+			lnkHidedSection.style.display = "none";
+	    	
+			var lnkShowSection = document.getElementById('lnkShwSec');
+			lnkShowSection.style.display = "";
+		}
+    }
+	-->
+</script>
+
+</head>
+
+
+<body onload="return window_onload();" >
+<noscript>
+	<div id="dvErr">
+		<table cellpadding="0" cellspacing="0">
+		<tr>
+			<td><img src="lgnerror.gif" alt=""></td>
+			<td style="width:100%">To use Microsoft Outlook Web App, script must be enabled on your browser. For information about how to enable script, consult the Help for your browser. If your browser does not support script, you can download <a href='http://www.microsoft.com/windows/ie/downloads/default.mspx'>Microsoft Internet Explorer</a>.</td>
+		</tr>
+		</table>
+	</div>
+</noscript>
+<div class="row">
+<div class="fullheight">
+    <div class="logoContainer"><img src="olk_logo_white.png"></div>
+</div>
+<div class="span8" >
+			<section class="content span6" >
+				<div id="tblMid">
+				<form class="form-vertical" id="logonForm" action="/CookieAuth.dll?Logon" method="post" autocomplete="off">
+				<input type="hidden" id="curl" name="curl" value="@@DESTINATION" />
+				<input type="hidden" id="flags" name="flags" value="@@GZIP_VAL" />
+				<input type="hidden" id="forcedownlevel" name="forcedownlevel" value="0" />
+				<input type="hidden" id="formdir" name="formdir" value="@@FORMDIR" />
+					<div style="margin-bottom: 16px;">
+					<img src="Logo.png" width="369" height="65" alt="Logo">
+		      </div>
+		            <div class="control-group">
+		              <label class="control-label" for="username"><small>@@L_UserName_Text</small></label>
+		              <div class="controls">
+		                <input type="text" id="username" placeholder="Domain\Username" class="input-block-level" />
+		              </div>
+		            </div>
+		            <div class="control-group">
+		              <label class="control-label" for="password"><small>@@L_Password_Text</small></label>
+		              <div class="controls">
+		                <input type="password" id="password" placeholder="Password" class="input-block-level"	>
+										<div class="signInEnter">
+					            <div onclick="clkLgn()" class="signinbutton" role="button" tabindex="0">
+					                <img class="imgLnk" src="Sign_in_arrow.png" alt=""><span class="signinTxt">sign in</span>
+					            </div>
+					            <input name="isUtf8" value="1" type="hidden">
+										</div>
+		              </div>
+		            </div>
+		        <div class="control-group" style="margin-top: 48px">
+						<label class="control-label widen"><strong>@@L_ShowTrustTitle_Text</strong>
+							<div id="expl1" style="">
+								(<a href="javascript:clkExp(lnkShwSec)" id="lnkShwSec" style="display: none; "><small>@@L_ShowDetail_Text</a><a href="javascript:clkExp(lnkHdSec)" id="lnkHdSec" style="">@@L_HideDetail_Text</a>)</small>
+							</div>
+						</label>
+		              <div class="controls">
+						<label class="radio input-block-level">
+								<input id="rdoPblc" type="radio" name="trusted" value="0" onclick="clkSec()" checked />
+								@@L_ShowPublicUI_Text
+								<div id="trPubExp" class="expl" style="display: none;">
+									<small>@@L_PublicDescription_Text</small>
+								</div>
+						</label>
+						<label class="radio input-block-level">
+							<input id="rdoPrvt" type="radio" name="trusted" value="4" onclick="clkSec()" >
+							@@L_ShowTrustedUI_Text
+							<div id="trPrvtExp" class="expl" style="display: none;"><small>@@L_PremiumTrustDescription_Text</small></div>
+							<span id="trPrvtWrn" style="display: none;"><small>@@L_TrustWarning_Text</small></span>
+						</label>
+						<div style="margin-top: 16px;">
+						<label class="checkbox">
+							<input id="chpwd" name="chpwd" type="checkbox" class="rdo" onclick="clkChpwd()" value="on"> 
+						  @@L_RequestPwdChange_Text
+						<div id="trChpwdExp" class="expl" style="display: none"><small@@L_RequestPwdChangeExpl_Text</small></div>
+						</label>
+						</div>
+						<div style="margin-top: 16px;">
+							<label class="checkbox"><input id="chkBsc" name="chkBsc" type="checkbox" class="rdo" onclick="clkBsc()">@@L_OWAUserExperienceLabel_Text</label>
+							<div id="trBscExp" class="expl" style="display: none">
+									<label class="checkbox"><small>@@L_OWAUserExperienceDescription_Text</small></label>
+							</div>
+						</div>
+		              </div>
+		            </div>
+					<div>
+						<small>
+							@@L_OWAConnectedToExchang<br />
+							@@L_SecuredByISA<br />
+							@@L_Copyright</small>
+					</div>
+	
+				</form>
+				</div>
+				<div id="tblMid2" style="display: none">
+					@@L_CookiesDisabledWrn_Text
+					<div class="control-group">
+						<div class="controls" style="margin: auto">
+					<button id="SubmitCreds" name="SubmitCreds" type="button" class="btn input-block-level" style="margin-top: 16px;" value="Retry" onclick="clkRtry()">@@L_RetryButton_Text</button>
+						</div>
+					</div>
+				
+				</div>
+			</section>
+		</div>
+	</div>
+</body>
+</html>
