@@ -17,7 +17,7 @@ The form also scales nicely for tablets and normal desktops / large screens.
 
 #Installation
 
-1. For Outlook Web Access, copy the existing Exchange Templates folder at:
+1. For Outlook Web Access, copy the existing Exchange Templates folder on your Forefront TMG Server at:
 	`C:\Program Files\Microsoft Forefront Threat Management Gateway\Templates\CookieAuthTemplates\Exchange`
 
 	For all other sites, copy the existing ISA Templates folder at:
@@ -26,7 +26,7 @@ The form also scales nicely for tablets and normal desktops / large screens.
 2. Call the duplicated folder 'Custom' (or whatever takes your fancy). You should now have a folder here:
 	`C:\Program Files\Microsoft Forefront Threat Management Gateway\Templates\CookieAuthTemplates\Custom`
 
-3. Copy the `usr_pwd.htm`, `styles_responsive.css`, and `Logo.png` files from either the **ISA** or **Exchange** folders in this project into the Custom Folder (replace the existing files). Use the *Exchange* versions for OWA, and the *ISA* versions for everything else. Feel free to replace Logo.png with your own custom logo.
+3. Copy all files under the **HTML** folder of your desired template (either ISA, Exchange or Exchange2013) in this project into the Custom Folder and replace the existing files. For example, copy all files from **Exchange2013\HTML into the Custom folder you created above. Use either of the *Exchange* templates for OWA, and the *ISA* versions for everything else. Feel free to replace Logo.png with your own custom logo.
 
 4. In your TMG Management console, edit your desired *Web Publishing rule* and go to the *Listener* page. Click **Properties**.
 
