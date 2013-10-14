@@ -5,7 +5,11 @@
 
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<link rel="stylesheet" href="styles_responsive.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" type="text/css" media="screen" href="style-ie.css"/>
+	<![endif]-->
 	<script src="flogon_test.js" type="text/javascript" charset="utf-8"></script>
 	<title>Outlook Web App</title>
 
@@ -19,21 +23,24 @@
     function window_onload()
     {
         onld();
+        document.getElementById('username').focus();
         
         if (chkCookies())
         {
-			ldCookie('username', 'password');
-	             
-			var expl1 = document.getElementById('expl1');
-			expl1.style.display = "";
-		    
-			var lnkHidedSection = document.getElementById('lnkHdSec');
-			lnkHidedSection.style.display = "none";
-	    	
-			var lnkShowSection = document.getElementById('lnkShwSec');
-			lnkShowSection.style.display = "";
-		}
-    }
+					ldCookie('username', 'password');
+			             
+					var expl1 = document.getElementById('expl1');
+					expl1.style.display = "";
+				    
+					var lnkHidedSection = document.getElementById('lnkHdSec');
+					lnkHidedSection.style.display = "none";
+			    	
+					var lnkShowSection = document.getElementById('lnkShwSec');
+					lnkShowSection.style.display = "";
+				}
+				
+			}
+
 	-->
 </script>
 
@@ -55,8 +62,8 @@
 <div class="fullheight">
     <div class="logoContainer"><img src="olk_logo_white.png"></div>
 </div>
-<div class="span8" >
-			<section class="content span6" >
+<div class="span8 content" >
+			<section class="span6" >
 				<div id="tblMid">
 				<form class="form-vertical" id="logonForm" action="/CookieAuth.dll?Logon" method="post" autocomplete="off">
 				<input type="hidden" id="curl" name="curl" value="@@DESTINATION" />
@@ -66,22 +73,24 @@
 					<div style="margin-bottom: 16px;">
 					<img src="Logo.png" width="369" height="65" alt="Logo">
 		      </div>
+		      <div class="wrng" style="margin-bottom: 16px; color: #C1272D">You could not be logged on to Forefront TMG. Make sure that your domain name, user name, and password are correct, and then try again</div>
 		            <div class="control-group">
 		              <label class="control-label" for="username"><small>Username</small></label>
 		              <div class="controls">
-		                <input type="text" id="username" placeholder="Domain\Username" class="input-block-level" />
+		                <input type="text" id="username" name="username" placeholder="Domain\Username" class="input-block-level" />
 		              </div>
 		            </div>
 		            <div class="control-group">
 		              <label class="control-label" for="password"><small>Password</small></label>
 		              <div class="controls">
-		                <input type="password" id="password" placeholder="Password" class="input-block-level"	>
-										<div class="signInEnter">
+		                <input type="password" name="username" id="password" placeholder="Password" class="input-block-level"	>
+		               
+						<div class="signInEnter">
 					            <div onclick="clkLgn()" class="signinbutton" role="button" tabindex="0">
 					                <img class="imgLnk" src="Sign_in_arrow.png" alt=""><span class="signinTxt">sign in</span>
 					            </div>
 					            <input name="isUtf8" value="1" type="hidden">
-										</div>
+						</div>
 		              </div>
 		            </div>
 		        <div class="control-group" style="margin-top: 48px">

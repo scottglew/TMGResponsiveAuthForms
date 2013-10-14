@@ -1,0 +1,26 @@
+.content {
+  padding: 24px;
+  max-width: 700px;
+  margin: 24px auto;
+  margin-left: 352px !important;
+}
+.fullheight {
+/*  
+  height: auto !important;  ie6 ignores !important, so this will be overridden below 
+  min-height: 100%; /* ie6 ignores min-height completely 
+  height: 100%;
+ */
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  display: inline-block;
+  width: 332px;
+  background: #0072c5;
+  margin-left: -20px;
+  width: 332px;
+  
+}
+.logoContainer {
+  margin: 64px auto auto 109px;
+}

@@ -9,6 +9,10 @@
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
+
+
+
+
 .clearfix {
   *zoom: 1;
 }
@@ -3530,10 +3534,11 @@ input[type="submit"].btn.btn-mini {
     overflow: visible !important;
   }
 }
-/*******Custom Styles********/
+
+ /*******Custom Styles********/
 
 .expl {  
- 	color: #999; /*this is the only style brought over from the default TMG block pages style sheet*/
+  color: #999; /*this is the only style brought over from the default TMG block pages style sheet*/
  }
 .imgLnk {
   vertical-align: middle;
@@ -3554,6 +3559,35 @@ padding-right: 11px;
 font-size: 22px;
 color: #0072C6;
 margin-top: 20px;
+}
+
+.content {
+  padding: 24px;
+  max-width: 700px;
+  margin: 24px auto;
+  margin-left: 352px;
+}
+.control-group .controls {
+  max-width: 400px;
+}
+ .fullheight {
+/*  
+  height: auto !important;  ie6 ignores !important, so this will be overridden below 
+  min-height: 100%; /* ie6 ignores min-height completely 
+  height: 100%;
+ */
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  display: inline-block;
+  background: #0072c5;
+  margin-left: -20px;
+  width: 332px;
+  
+}
+ .logoContainer {
+  margin: 64px auto auto 109px;
 }
 
 /* Landscape phones and down */
@@ -3676,5 +3710,4 @@ margin-top: 20px;
     margin: 64px auto auto 109px;
   }
 }
-
 

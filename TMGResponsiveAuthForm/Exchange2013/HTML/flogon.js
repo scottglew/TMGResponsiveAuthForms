@@ -171,7 +171,7 @@ function clkLgn()
 		var sL = "lgn=" + getUser().value;
 		document.cookie = "logondata=" + sA + "&" + sL + "; expires=" + oD.toUTCString();
 	}
-    document.forms['logonForm'].submit();
+     document.forms['logonForm'].submit();
 }
 
 function clkLgn_new()

@@ -15,6 +15,12 @@ The form also scales nicely for tablets and normal desktops / large screens.
 
 ![Responsive Forefront TMG Forms Authentication on Desktop](http://www.fastvue.co/wp-content/uploads/2012/09/ForefrontTMGMobileFriendlyAuthenticationOnDesktop-300x187.png "Responsive Forefront TMG Forms Authentication on Desktop")
 
+There is also a template for Exchange OWA, both with and without the Exchange 2013 style. Here's the Exchange 2013 template:
+![Forefront TMG Forms Based Authentication Template for Exchange 2013 - Desktop](http://www.fastvue.co/wp-content/uploads/2013/10/Desktop-300x154.png "Forefront TMG Forms Based Authentication Template for Exchange 2013 - Desktop")
+
+![Forefront TMG Forms Based Authentication Template for Exchange 2013 - Mobile](http://www.fastvue.co/wp-content/uploads/2013/10/Mobile-187x300.png "Forefront TMG Forms Based Authentication Template for Exchange 2013 - Mobile")
+
+
 #Installation
 
 1. For Outlook Web Access, copy the existing Exchange Templates folder on your Forefront TMG Server at:

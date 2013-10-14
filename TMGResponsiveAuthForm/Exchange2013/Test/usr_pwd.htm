@@ -7,53 +7,54 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<link rel="stylesheet" href="styles_responsive.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" type="text/css" media="screen" href="style-ie.css"/>
+	<![endif]-->
 	<script src="flogon_test.js" type="text/javascript" charset="utf-8"></script>
-
-
-<title>@@L_OWAWindowTitle_Text</title>
-
+	<title>Outlook Web App</title>
+	
 
 <script type="text/javascript">
-	<!--
-	
 	var a_fGzpEnbl = 1;
     var g_fFcs = 1;
 	
     function window_onload()
     {
         onld();
+        document.getElementById('username').focus();
         
         if (chkCookies())
         {
-			ldCookie('username', 'password');
-	             
-			var expl1 = document.getElementById('expl1');
-			expl1.style.display = "";
-		    
-			var lnkHidedSection = document.getElementById('lnkHdSec');
-			lnkHidedSection.style.display = "none";
-	    	
-			var lnkShowSection = document.getElementById('lnkShwSec');
-			lnkShowSection.style.display = "";
-		}
+					ldCookie('username', 'password');
+			             
+					var expl1 = document.getElementById('expl1');
+					expl1.style.display = "";
+				    
+					var lnkHidedSection = document.getElementById('lnkHdSec');
+					lnkHidedSection.style.display = "none";
+			    	
+					var lnkShowSection = document.getElementById('lnkShwSec');
+					lnkShowSection.style.display = "";
+				}
     }
-	-->
+	
 </script>
 
 </head>
 
 
-<body onload="return window_onload();" >
+<body class="owaLgnBdy" onload="return window_onload();" >
 <noscript>
 	<div id="dvErr">
 		<table cellpadding="0" cellspacing="0">
 		<tr>
 			<td><img src="lgnerror.gif" alt=""></td>
-			<td style="width:100%">To use Microsoft Outlook Web App, script must be enabled on your browser. For information about how to enable script, consult the Help for your browser. If your browser does not support script, you can download <a href='http://www.microsoft.com/windows/ie/downloads/default.mspx'>Microsoft Internet Explorer</a>.</td>
+			<td style="width:100%">@@L_OWANoScriptMessage_Text</td>
 		</tr>
 		</table>
 	</div>
 </noscript>
+
 <div class="row">
 <div class="fullheight">
     <div class="logoContainer"><img src="olk_logo_white.png"></div>
@@ -73,14 +74,15 @@
 		            <div class="control-group">
 		              <label class="control-label" for="username"><small>@@L_UserName_Text</small></label>
 		              <div class="controls">
-		                <input type="text" id="username" name="username" placeholder="Domain\Username" class="input-block-level" />
+		                <input type="text" id="username" name="username" placeholder="Domain\Username" class="input-block-level"  />
 		              </div>
 		            </div>
 		            <div class="control-group">
 		              <label class="control-label" for="password"><small>@@L_Password_Text</small></label>
 		              <div class="controls">
-		                <input type="password" id="password" name="password" placeholder="Password" class="input-block-level"	>
-										<div class="signInEnter">
+		                <input type="password" id="password" name="password" placeholder="Password" class="input-block-level" />
+
+							<div class="signInEnter">
 					            <div onclick="clkLgn()" class="signinbutton" role="button" tabindex="0">
 					                <img class="imgLnk" src="Sign_in_arrow.png" alt=""><span class="signinTxt">sign in</span>
 					            </div>
@@ -89,7 +91,7 @@
 		              </div>
 		            </div>
 		        <div class="control-group" style="margin-top: 48px">
-						<label class="control-label widen"><strong>@@L_ShowTrustTitle_Text</strong>
+						<label class="control-label widen"><strong>@@L_LoginButton_Text</strong>
 							<div id="expl1" style="">
 								(<a href="javascript:clkExp(lnkShwSec)" id="lnkShwSec" style="display: none; "><small>@@L_ShowDetail_Text</a><a href="javascript:clkExp(lnkHdSec)" id="lnkHdSec" style="">@@L_HideDetail_Text</a>)</small>
 							</div>
@@ -112,7 +114,7 @@
 						<label class="checkbox">
 							<input id="chpwd" name="chpwd" type="checkbox" class="rdo" onclick="clkChpwd()" value="on"> 
 						  @@L_RequestPwdChange_Text
-						<div id="trChpwdExp" class="expl" style="display: none"><small@@L_RequestPwdChangeExpl_Text</small></div>
+						<div id="trChpwdExp" class="expl" style="display: none"><small>@@L_RequestPwdChangeExpl_Text</small></div>
 						</label>
 						</div>
 						<div style="margin-top: 16px;">
@@ -125,8 +127,8 @@
 		            </div>
 					<div>
 						<small>
-							@@L_OWAConnectedToExchang<br />
-							@@L_SecuredByISA<br />
+							@@L_OWAConnectedToExchange<br />
+							@@L_SecuredByISAy<br />
 							@@L_Copyright</small>
 					</div>
 	
