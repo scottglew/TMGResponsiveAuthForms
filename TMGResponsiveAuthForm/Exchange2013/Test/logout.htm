@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link rel="stylesheet" href="styles_responsive.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" type="text/css" media="screen" href="style-ie.css"/>
+	<![endif]-->
+	<script src="flogon_test.js" type="text/javascript" charset="utf-8"></script>
+	<title>Outlook Web App</title>
+	
+
+<script type="text/javascript">
+	
+    function window_onload()
+    {
+       
+    }
+	
+</script>
+
+</head>
+
+
+<body class="owaLgnBdy" onload="return window_onload();" >
+<noscript>
+	<div id="dvErr">
+		<table cellpadding="0" cellspacing="0">
+		<tr>
+			<td><img src="lgnerror.gif" alt=""></td>
+			<td style="width:100%">@@L_OWANoScriptMessage_Text</td>
+		</tr>
+		</table>
+	</div>
+</noscript>
+
+<div class="row">
+<div class="fullheight">
+    <div class="logoContainer"><img src="olk_logo_white.png"></div>
+</div>
+<div class="span8 content" onKeyPress="return checkSubmit(event)"  >
+			<section class="span6">
+				<div id="tblMid">
+						<div style="margin-bottom: 16px;">
+							<img src="Logo.png" width="369" height="65" alt="Logo">
+			      </div>
+			      <div style="margin-bottom: 16px;">@@L_OWALogoffUser_Text</div>
+   					<div class="signInEnter">
+	            <div onclick="window.close();return false;" class="signinbutton" role="button" tabindex="0">
+	              <img class="imgLnk" src="/CookieAuth.dll?GetPic?formdir=@@FORMDIR&image=Sign_in_arrow.png" alt=""><span class="signinTxt">@@L_CloseWindow_Text</span>
+	           	</div>
+	          <input name="isUtf8" value="1" type="hidden">
+						</div><br /><br />
+			      <small>
+							@@L_OWAConnectedToExchange<br />
+							@@L_SecuredByISAy<br />
+							@@L_Copyright</small>
+				</div>
+			</section>
+		</div>
+	</div>
+</body>
+</html>

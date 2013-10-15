@@ -156,6 +156,12 @@ function hd(o)
     o.style.display = "none"
 }
 
+function checkSubmit(e) {
+    if (e && e.keyCode == 13) {
+        clkLgn();
+    }
+} 
+
 function clkLgn()
 {
 	// If security is set to private, add a cookie to persist username and basic setting
