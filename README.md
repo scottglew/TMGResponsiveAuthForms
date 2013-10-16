@@ -1,12 +1,11 @@
-Forefront TMG Responsive Authorization Forms
+Forefront TMG Responsive Forms Based Authentication Templates
 ======================
 
-Responsive (Mobile Friendly) Authentication Forms for Microsoft Forefront TMG
+Forms based authentication templates for Forefront TMG to make logging in easier on mobile devices.
 
 #Purpose
 
-This project contains a set of templates for Microsoft Forefront Threat Management Gateway to make logging into
-published websites easier on mobile devices.
+This project contains a set of custom templates you can use when publishing websites using Forefront TMG and Forms Based Authentication. These templates are fully [responsive](http://en.wikipedia.org/wiki/Responsive_web_design) to provide a  nicer experience when logging into your secured sites using a smart phone or tablet.
 
 This default form ![Default Forefront TMG Forms Authentication on iPhone](http://www.fastvue.co/wp-content/uploads/2012/08/ForefrontTMGFormsAuthenticationOniPhone-200x300.png "Default Forefront TMG Forms Authentication on iPhone")
 becomes ![Responsive Forefront TMG Forms Authentication on iPhone](http://www.fastvue.co/wp-content/uploads/2012/08/ForefrontTMGMobileFriendlyAuthenticationOniPhone-200x300.png "Responsive Forefront TMG Forms Authentication on iPhone")
