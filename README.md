@@ -51,9 +51,9 @@ Browse to the site and Forefront TMG will present the new authentication page. T
 
 #Issues
 
-For now, only the usr_pwd.htm file has been customized. This file is served only when using Windows (Active Directory) authentication (set on the Authentication page in step 5 above). 
-I intend to customize the other forms (Radius and SecureID) soon. Feel free to contribute!
+For now, only the usr_pwd.htm file has been customized. This file is served only when using Windows (Active Directory) authentication (set on the Authentication page in step 5 above). If you're using Radius or SecureID, feel free to contribute to the project! :)
 
 #Credits
 1. Responsive goodness is provided mainly by the scaffolding and forms components in [bootstrap](http://twitter.github.com/bootstrap)
 2. The inspiration for this project came from a web development request from Etienne Liebetrau of [Fix My IT System](http://fixmyitsystem.com)
+3. Thanks to [Richard Hicks](http://tmgblog.richardhicks.com) and [Will Smothers](http://www.linkedin.com/in/willsmothers) for their testing of the Exchange 2013 template.
