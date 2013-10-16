@@ -37,11 +37,11 @@ There is also a template for Exchange OWA, both with and without the Exchange 20
 
 4. In your TMG Management console, edit your desired *Web Publishing rule* and go to the *Listener* page. Click **Properties**.
 
-5. On the *Authentication* page, ensure *HTML Forms Authentication* is selected.
+5. On the **Authentication** tab, ensure *HTML Forms Authentication* is selected.
 
-6. On the Forms Tab enter 'Custom' (you don't need to enter the entire path, just the word 'Custom' (or whatever you specified in step 2) without the quotes).
+6. On the **Forms** tab enter 'Custom' (you don't need to enter the entire path, just the word 'Custom' (or whatever you specified in step 2) without the quotes).
 
-7. If you used the Exchange Publishing Wizard in Forefront TMG, you also need to go to the Application Settings tab and enter 'Custom' (or whatver you specified in step 2) in the 'Type the custom HTML for set directory' edit box.
+7. If you used the Exchange Publishing Wizard in Forefront TMG, you also need to go to the **Application Settings** tab and enter 'Custom' (or whatever you specified in step 2) in the 'Type the custom HTML for set directory' edit box.
 
 7. Apply the changes. 
 
