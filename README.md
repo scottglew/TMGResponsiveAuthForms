@@ -32,19 +32,22 @@ There is also a template for Exchange OWA, both with and without the Exchange 20
 2. Call the duplicated folder 'Custom' (or whatever takes your fancy). You should now have a folder here:
 	`C:\Program Files\Microsoft Forefront Threat Management Gateway\Templates\CookieAuthTemplates\Custom`
 
-3. Copy all files under the **HTML** folder of your desired template (either ISA, Exchange or Exchange2013) in this project into the corresponding HTML sub-folder of your **Custom** Folder and replace the existing files. For example, copy all files from **Exchange2013\HTML** into your **Custom\HTML** folder. Use either of the *Exchange* templates for OWA, and the *ISA* versions for everything else. Feel free to replace Logo.png with your own custom logo.
+3. Copy all files under the **HTML** folder of your desired template (either ISA, Exchange or Exchange2013) in this project into the corresponding HTML sub-folder of your **Custom** Folder and replace the existing files. For example, copy all files from **Exchange2013\HTML** into your **Custom\HTML** folder. Use either of the *Exchange* templates for OWA, and the *ISA* versions for everything else. 
 
-4. In your TMG Management console, edit your desired *Web Publishing rule* and go to the *Listener* page. Click **Properties**.
+4. Feel free to replace Logo.png with your own custom logo, but you may also need to edit the size attributes of the image tag in the usr_pwd.htm file to match the dimensions of your logo. This is the tag to look for (set width and height appropriately):
+    `<img src="/CookieAuth.dll?GetPic?formdir=@@FORMDIR&image=Logo.png" width="369" height="65" alt="Logo">`
 
-5. On the **Authentication** tab, ensure *HTML Forms Authentication* is selected.
+5. In your TMG Management console, edit your desired *Web Publishing rule* and go to the *Listener* page. Click **Properties**.
 
-6. On the **Forms** tab enter 'Custom' (you don't need to enter the entire path, just the word 'Custom' (or whatever you specified in step 2) without the quotes).
+6. On the **Authentication** tab, ensure *HTML Forms Authentication* is selected.
 
-7. If you used the Exchange Publishing Wizard in Forefront TMG, you also need to go to the **Application Settings** tab and enter 'Custom' (or whatever you specified in step 2) in the 'Type the custom HTML for set directory' edit box.
+7. On the **Forms** tab enter 'Custom' (you don't need to enter the entire path, just the word 'Custom' (or whatever you specified in step 2) without the quotes).
 
-7. Apply the changes. 
+8. If you used the Exchange Publishing Wizard in Forefront TMG, you also need to go to the **Application Settings** tab and enter 'Custom' (or whatever you specified in step 2) in the 'Type the custom HTML for set directory' edit box.
 
-8. Restart the TMG Firewall Service (yeah, I know...  Unfortunately TMG Caches these pages and restarting the service is the only way to clear it as far as I know). 
+9. Apply the changes. 
+
+10. Restart the TMG Firewall Service (yeah, I know...  Unfortunately TMG Caches these pages and restarting the service is the only way to clear it as far as I know). 
 
 Browse to the site and Forefront TMG will present the new authentication page. Try it on a smart phone or tablet and marvel at its beauty. 
 
