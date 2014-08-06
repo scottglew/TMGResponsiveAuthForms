@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta http-equiv="Content-Type" content="text/html; CHARSET=utf-8">
+	
+	<title>@@L_OWAWindowTitle_Text</title>
+	  <link rel="shortcut icon" href="/CookieAuth.dll?GetPic?formdir=@@FORMDIR&image=favicon.ico" type="image/x-icon"> 
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta content="NOINDEX, NOFOLLOW" name="Robots">
+	
+	<link rel="stylesheet" href="/CookieAuth.dll?GetPic?formdir=@@FORMDIR&image=styles_responsive.css" type="text/css">
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" type="text/css" media="screen" href="/CookieAuth.dll?GetPic?formdir=@@FORMDIR&image=style-ie.css"/>
+	<![endif]-->
+	<script src="/CookieAuth.dll?GetPic?formdir=@@FORMDIR&image=flogon.js" type="text/javascript"></script>
+	
+
+<script type="text/javascript">
+	var a_fGzpEnbl = 1;
+    var g_fFcs = 1;
+    
+    function window_onload()
+    {
+        var uid = document.getElementById('newpin');
+        if (g_fFcs)
+        {
+            uid.select();
+            uid.focus();
+        }
+        
+        var expl4 = document.getElementById('expl4');
+	    expl4.style.display = "";
+	    
+        var lnkHidedSection = document.getElementById('lnkHdExp4');
+	    lnkHidedSection.style.display = "none";
+    	
+	    var lnkShowSection = document.getElementById('lnkShwExp4');
+	    lnkShowSection.style.display = "";
+	    
+	    clkPin();
+    }
+	
+</script>
+
+</head>
+
+
+<body class="owaLgnBdy" onload="return window_onload();" >
+<noscript>
+	<div id="dvErr">
+		<table cellpadding="0" cellspacing="0">
+		<tr>
+			<td><img src="/CookieAuth.dll?GetPic?formdir=@@FORMDIR&image=lgnerror.gif" alt=""></td>
+			<td style="width:100%">@@L_OWANoScriptMessage_Text</td>
+		</tr>
+		</table>
+	</div>
+</noscript>
+
+<div class="row">
+	<div class="fullheight">
+	    <div class="logoContainer"><img src="/CookieAuth.dll?GetPic?formdir=@@FORMDIR&image=olk_logo_white.png"></div>
+	</div>
+	<div class="span8 content" onKeyPress="return checkSubmit(event)" >
+		<section class="span6" >
+			<div id="tblMid">
+				<form class="form-vertical" id="logonForm" action="@@URL?Logon" method="post" autocomplete="off">
+				<input id="flags" type="hidden" name="flags" value="0">
+		        <input id="forcedownlevel" type="hidden" name="forcedownlevel" value="0">
+		        <input id="userid" type="hidden" name="userid" value="@@USER">
+		        <input id="curl" type="hidden" name="curl" value="@@DESTINATION">
+		        <input id="sessionid" type="hidden" name="sessionid" value="@@SESSIONID">
+		        <input id="formdir" type="hidden" name="formdir" value="@@FORMDIR">
+				<div style="margin-bottom: 16px;">
+					<img src="/CookieAuth.dll?GetPic?formdir=@@FORMDIR&image=Logo.png" width="369" height="65" alt="Logo">
+		      	</div>
+		      	
+		      	<div>@@L_NewPin2_Text2_Text <span id="expl4" style="display:none">
+					(<a href="javascript:clkExp4(lnkShwExp4)" id="lnkShwExp4"><small>@@L_ShowDetail_Text</a><a href="javascript:clkExp4(lnkHdExp4)" id="lnkHdExp4" style="">@@L_HideDetail_Text</a>)</small>
+					</span>
+				</div>
+				<div class="control-group">
+					<div class="controls">
+						<label class="radio input-block-level">
+							<input id="rdoCPinSys" type="radio" name="pintype" value="1" onclick="clkPin()" checked="checked" />
+							@@L_NewPin2_SysPin_Text
+							<div id="trPinSysExp" class="expl" style="display: none;">
+								<small>@@L_NewPin2_Text3_Text</small>
+							</div>
+						</label>
+						<label class="radio input-block-level">
+							<input id="rdoCPinUser" type="radio" name="pintype" value="2" onclick="clkPin()" />
+							@@L_NewPin2_UserPin_Text
+							<div id="trPinUserExp" class="expl" style="display: none;">
+								<small>@@L_NewPin2_Text4_Text</small>
+							</div>
+						</label>
+
+					</div>
+				</div>
+		      	
+	            <div class="control-group">
+	            	<label class="control-label" for="newpin"><small>@@L_NewPin_Text</small></label>
+	            	<div class="controls">
+	                	<input class="input-block-level" type="password" id="newpin" name="newpin"/>
+	            	</div>
+	            </div>
+
+	            <div class="control-group">
+	            	<label class="control-label" for="nextprn"><small>@@L_NewPin_Verify_Text</small></label>
+	            	<div class="controls">
+	                	<input class="input-block-level" type="password" id="nextprn" name="nextprn"/>
+	            	</div>
+	            </div>
+
+	            <div class="control-group">
+	            	<div class="controls">
+	            		<div class="signInEnter">
+	                		<input class="btn" id="submitPIN" type="submit" value="@@L_LoginButton_Text" onclick name="submitPIN" />
+		            		<input class="btn" id="cancelPIN" type="submit" value="@@L_CancelButton_Text" onclick name="SubmitCancel" />
+	                	</div>
+	            	</div>
+	            </div>
+	        	
+				<div class="productFooter">
+					<small>
+						@@L_OWAConnectedToExchange<br />
+						@@L_SecuredByISA<br />
+						@@L_Copyright</small>
+				</div>
+	
+				</form>
+			</div>
+
+		</section>
+	</div>
+</div>
+</body>
+</html>

@@ -82,31 +82,33 @@
 </noscript>
 
 <div class="row">
-<div class="fullheight">
-    <div class="logoContainer"><img src="/CookieAuth.dll?GetPic?formdir=@@FORMDIR&image=olk_logo_white.png"></div>
-</div>
-<div class="span8 content" onKeyPress="return checkSubmit(event)"  >
-			<section class="span6">
-				<div id="tblMid">
-						<div style="margin-bottom: 16px;">
-							<img src="/CookieAuth.dll?GetPic?formdir=@@FORMDIR&image=Logo.png" width="369" height="65" alt="Logo">
-			      </div>
-			      <div style="margin-bottom: 16px;">@@L_OWALogoffUser_Text</div>
-   					<div class="signInEnter">
-	            <div onclick="window.close();return false;" class="signinbutton" role="button" tabindex="0">
-	              <img class="imgLnk" src="/CookieAuth.dll?GetPic?formdir=@@FORMDIR&image=Sign_in_arrow.png" alt=""><span class="signinTxt">@@L_CloseWindow_Text</span>
-	           	</div>
-	          <input name="isUtf8" value="1" type="hidden">
-						</div><br /><br />
-			      <small>
-							@@L_OWAConnectedToExchange<br />
-							@@L_SecuredByISAy<br />
-							@@L_Copyright</small>
-				</div>
-			</section>
-		</div>
+	<div class="fullheight">
+	    <div class="logoContainer"><img src="/CookieAuth.dll?GetPic?formdir=@@FORMDIR&image=olk_logo_white.png"></div>
 	</div>
-	<script type="text/javascript">
+	<div class="span8 content" onKeyPress="return checkSubmit(event)"  >
+		<section class="span6">
+			<div id="tblMid">
+				<div style="margin-bottom: 16px;">
+					<img src="/CookieAuth.dll?GetPic?formdir=@@FORMDIR&image=Logo.png" width="369" height="65" alt="Logo">
+		      	</div>
+		      	<div style="margin-bottom: 16px;">@@L_OWALogoffUser_Text</div>
+				<div class="signInEnter">
+	            	<div onclick="window.close();return false;" class="signinbutton" role="button" tabindex="0">
+	              		<img class="imgLnk" src="/CookieAuth.dll?GetPic?formdir=@@FORMDIR&image=Sign_in_arrow.png" alt=""><span class="signinTxt">@@L_CloseWindow_Text</span>
+	           		</div>
+	          		<input name="isUtf8" value="1" type="hidden">
+			  	</div>
+			  	<div class="productFooter">
+			      	<small>
+					@@L_OWAConnectedToExchange<br />
+					@@L_SecuredByISAy<br />
+					@@L_Copyright</small>
+				</div>
+			</div>
+		</section>
+	</div>
+</div>
+<script type="text/javascript">
 	<!--
 	if (IsMimeCtlInst("MimeBhvr.MimeCtlVer"))
 		RndMimeCtlHlpr2("MimeNSe2k3", "D801B381-B81D-47a7-8EC4-EFC111666AC0", "MIMEe2k3", "mimeLogoffE2k3");

@@ -18,14 +18,36 @@
 <script type="text/javascript">
 	<!--
 	function window_onload()
-    {
-    }
+        {
+            resizeDialog();
+        }
+
+        function resizeDialog()
+        {
+            var oBody = window.document.body;
+            var iHeight = oBody.scrollHeight + (parseInt(window.dialogHeight, 10) - oBody.clientHeight) + 20;
+            var iWidth = oBody.scrollWidth + (parseInt(window.dialogWidth, 10) - oBody.clientWidth) + 20;
+            window.dialogHeight = iHeight + "px";
+            window.dialogWidth = iWidth + "px";
+            window.dialogTop = Math.round((screen.availHeight - iHeight) / 2);
+            window.dialogLeft = Math.round((screen.availWidth - iWidth) / 2);
+        }
 	-->
 </script>
 </head>
 
 <body class="owaLgnBdy" onload="return window_onload();" >
-
+<noscript>
+<div class="row">
+	<div class="span8 content" onKeyPress="return checkSubmit(event)" >
+		<div class="span6" >
+			<div id="tblMid">
+			    <div style="margin-bottom: 16px; color: #C1272D">@@L_ErrNoActiveScript1_Text</div>
+		  	</div>
+	  	</div>
+	</div>
+</div>
+</noscript>
 
 <div class="row">
 	<div class="fullheight">
@@ -37,13 +59,7 @@
 			<div style="margin-bottom: 16px;">
 				<img src="/CookieAuth.dll?GetPic?formdir=@@FORMDIR&image=Logo.png" width="369" height="65" alt="Logo">
 		    </div>
-		    <div style="margin-bottom: 16px;">@@L_OWALogoffUser_Text</div>
-	        <div class="signInEnter">
-	            <div onclick="window.close();return false;" class="signinbutton" role="button" tabindex="0">
-	              	<img class="imgLnk" src="/CookieAuth.dll?GetPic?formdir=@@FORMDIR&image=Sign_in_arrow.png" alt="" /><span class="signinTxt">@@L_CloseWindow_Text</span>
-	           	</div>
-	          	<input name="isUtf8" value="1" type="hidden">
-			</div>
+		    <div class="wrng" style="margin-bottom: 16px; color: #C1272D">@@L_DialogRelogon_Text</div>
 	        <div class="productFooter">
 				<small>
 					@@L_OWAConnectedToExchange<br />

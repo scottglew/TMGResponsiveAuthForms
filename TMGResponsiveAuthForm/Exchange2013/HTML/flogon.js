@@ -168,7 +168,7 @@ function clkLgn()
 	// If security is set to private, add a cookie to persist username and basic setting
 	// Cookie format: logondata=acc=<1 or 0>&lgn=<username>
 	//
-	if (gbid("rdoPrvt").checked)
+	if (gbid || gbid("rdoPrvt").checked)
 	{
 		// Calculate the expires time for two weeks
 		//
@@ -179,6 +179,11 @@ function clkLgn()
 		document.cookie = "logondata=" + sA + "&" + sL + "; expires=" + oD.toUTCString();
 	}
      document.forms['logonForm'].submit();
+}
+
+function clkSubmit(submitBtnID){
+    var submitBtn = document.getElementById(submitBtnID);
+    submitBtn.onclick.apply(submitBtn);
 }
 
 function clkLgn_new()
