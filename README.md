@@ -53,7 +53,9 @@ Browse to the site and Forefront TMG will present the new authentication page. T
 
 #Issues
 
-For now, only the usr_pwd.htm file has been customized. This file is served only when using Windows (Active Directory) authentication (set on the Authentication page in step 5 above). If you're using Radius or SecureID, feel free to contribute to the project! :)
+Due to popular demand, I have now customized all forms in the **Exchange2013** folder including the Change Password form, and the forms used for Radius and SecureID. However in the other two folders (Exchange and ISA), only the usr_pwd.htm file has been customized. This file is served only when using Windows (Active Directory) authentication (set on the Authentication page in step 5 above). 
+
+If you're using Radius or SecureID and prefer to use the ISA or non-2013 Exchange forms, feel free to contribute to the project! :) Otherwise, I'll get to them when I can. 
 
 #Credits
 1. Responsive goodness is provided mainly by the scaffolding and forms components in [bootstrap](http://twitter.github.com/bootstrap)
