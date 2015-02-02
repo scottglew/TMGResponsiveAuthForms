@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!-- {57A118C6-2DA9-419d-BE9A-F92B0F9A418B} -->
+<html>
+
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; CHARSET=utf-8">
+	
+	<title>@@L_WindowTitle_Text</title>
+	  <link rel="shortcut icon" href="/CookieAuth.dll?GetPic?formdir=@@FORMDIR&image=favicon.ico" type="image/x-icon"> 
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta content="NOINDEX, NOFOLLOW" name="Robots">
+	
+	<link rel="stylesheet" href="/CookieAuth.dll?GetPic?formdir=@@FORMDIR&image=styles_responsive.css" type="text/css">
+	<script src="/CookieAuth.dll?GetPic?formdir=@@FORMDIR&image=flogon.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	<!--	
+	
+		var a_fGzpEnbl = 1;
+	    var g_fFcs = 1;
+	
+	    function window_onload()
+	    {
+	        onld();
+        
+	        if (chkCookies())
+	        {
+				ldCookie('userid', 'passcode');
+	             
+				var expl1 = document.getElementById('expl1');
+				expl1.style.display = "";
+		    
+				var lnkHidedSection = document.getElementById('lnkHdSec');
+				lnkHidedSection.style.display = "none";
+	    	
+				var lnkShowSection = document.getElementById('lnkShwSec');
+				lnkShowSection.style.display = "";
+				
+			}
+	    }
+	-->	
+	</script>
+</head>
+
+<body onload="return window_onload();" >
+
+<div class="container">
+	<div class="row">
+		<div class="span12">
+			<section class="content">
+				<div id="tblMid">
+				<form class="form-horizontal" id="logonForm" action="@@URL?Logon" method="post" autocomplete="off">
+				<input id="stage" type="hidden" name="stage" value="useridandpasscode" />
+				<input type="hidden" id="curl" name="curl" value="@@DESTINATION" />
+				<input type="hidden" id="flags" name="flags" value="0" />
+				<input id="sessionid" type="hidden" name="sessionid" value="@@SESSIONID" />
+				<input type="hidden" id="forcedownlevel" name="forcedownlevel" value="0" />
+				<input type="hidden" id="formdir" name="formdir" value="@@FORMDIR" />
+					<div style="text-align: center;">
+					<img src="/CookieAuth.dll?GetPic?formdir=@@FORMDIR&image=Logo.png" width="369" height="65" alt="Logo">
+		            </div>
+					<div>@@INSERT_USER_TEXT</div>
+					<legend>WeBuyAnyCar Security Login</legend>
+		            <div class="control-group">
+		              <label class="control-label" for="userid">@@L_UserID_Text</label>
+		              <div class="controls">
+		                <input type="text" id="userid" placeholder="User ID" name="userid"  class="input-block-level"
+						maxlength="32"
+						value="@@USER"
+						/>
+		              </div>
+		            </div>		
+		            <div class="control-group">
+		              <label class="control-label" for="password">@@L_Password_Text</label>
+		              <div class="controls">
+		                <input type="password" id="password" 
+						onfocus="g_fFcs=0"
+						placeholder="Password" name="password" class="input-block-level"/>
+		              </div>
+		            </div>	
+					 <div class="control-group">
+		              <label class="control-label" for="passcode">@@L_Passcode_Text</label>
+		              <div class="controls">
+		                <input type="password" id="passcode" onfocus="g_fFcs=0" placeholder="Passcode" name="passcode"  class="input-block-level" />
+			<button id="SubmitCreds" name="SubmitCreds" type="submit" class="btn btn-block" style="margin-top: 16px;" value="@@L_LoginButton_Text" onclick="clkLgn()">@@L_LoginButton_Text</button>
+		              </div>
+		            </div>
+					
+		            <div class="control-group">
+						<label class="control-label widen"><strong>@@L_ShowTrustTitle_Text</strong>
+							<div id="expl1" style="">
+								(<a href="javascript:clkExp(lnkShwSec)" id="lnkShwSec" style="display: none; "><small>@@L_ShowDetail_Text</a><a href="javascript:clkExp(lnkHdSec)" id="lnkHdSec" style="">@@L_HideDetail_Text</a>)</small>
+							</div>
+						</label>
+		              <div class="controls">
+						<label class="radio input-block-level">
+								<input id="rdoPblc" type="radio" name="trusted" value="0" onclick="clkSec()" checked />
+								@@L_ShowPublicUI_Text
+								<div id="trPubExp" class="expl" style="display: none;">
+									<small>@@L_PublicDescription_Text</small>
+								</div>
+						</label>
+						<label class="radio input-block-level">
+							<input id="rdoPrvt" type="radio" name="trusted" value="4" onclick="clkSec()" >
+						@@L_ShowTrustedUI_Text
+							<div id="trPrvtExp" class="expl" style="display: none;"><small>@@L_PremiumTrustDescription_Text</small></div>
+							<div id="trPrvtWrn" style="display: none;">
+								<small>@@L_TrustWarning_Text</small></div>
+						</label>
+						<div style="margin-top: 16px; display: @@CHPWDSTYLE">
+						<label class="checkbox">
+							<input id="chpwd" name="chpwd" type="checkbox" class="rdo" onclick="clkChpwd()" value="on"> 
+						 @@L_RequestPwdChange_Text
+						<div  id="trChpwdExp" class="expl" style="display: none"><small>@@L_RequestPwdChangeExpl_Text</small></div>
+						</label>
+						</div>
+		              </div>
+		            </div>
+					<div style="text-align: center">
+						<small>@@L_SecuredByISA<br />
+							<small>@@L_Copyright</small></small>
+					</div>	
+				</form>
+				</div>
+				<div id="tblMid2" style="display: none">
+				@@L_CookiesDisabledWrn_Text
+					<div class="control-group">
+						<div class="controls" style="margin: auto">
+					<button id="SubmitCreds" name="SubmitCreds" type="button" class="btn btn-block" style="margin-top: 16px;" value="@@L_RetryButton_Text" onclick="clkRtry()">@@L_RetryButton_Text</button>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+</div>
+</body>
+</html>
